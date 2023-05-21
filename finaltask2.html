@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Final Task 2 </title>
+</head>
+
+<script type="text/javascript" src="finaltask2.js"> </script>
+
+<body>
+    
+    <form>
+
+        <fieldset style="width:300px">
+
+            <legend> </legend>
+
+            <label for="quantity"> Basketball Products </label>
+            <input type="text" id="quantity" value="0" size="10">
+            <button type="button" onclick="increment()"> + </button>
+            <button type="button" onclick="decrement()"> - </button>
+
+            <br>
+
+            <label for="shipping"> Shipping and Handling Fee: </label>
+            <input type="text" id="shipping" value="4.99" size="10"><br>
+            <button type="button" onclick="calculate()"> Calculate </button>
+
+        </fieldset>
+
+        <table>
+
+            <tr>
+
+                <label style="font-weight: bold;"> Order Summary </label>
+
+            </tr>
+
+            <tr>
+
+                <td><label> Items: </label></td>
+                <td><span id="numItems"> 0 </span></td>
+
+            </tr>
+
+            <tr>
+
+                <td><label> Shipping & handling: </label></td>
+                <td><span id="shippingFee"> 0 </span></td>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr>
+
+                <td><label> Total before tax: </label></td>
+                <td><span id="totalBeforeTax"> $0.00 </span></td>
+
+            </tr>
+
+                <td><label> Estimated tax (10%): </label></td>
+                <td><span id="tax"> $0.00 </span></td>
+
+            </tr>
+
+            <tr>
+
+                <td><label style="font-weight: bold; color: crimson;"> Order total: </label> </td>
+                <td><p style="font-weight: bold; color: crimson;" id="totalOrder"> $0.00 </p></td>
+
+            </tr>
+
+        </table>
+
+    </form>
+</body>
+</html>
